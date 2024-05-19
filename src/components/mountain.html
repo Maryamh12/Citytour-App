@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+        .carousel {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+        }
+        .carousel-item {
+            scroll-snap-align: start;
+            flex: none;
+            width: 100%;
+            position: relative;
+            padding: 1rem;
+        }
+        .carousel-item img {
+            width: 100%;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .carousel-text {
+            position: absolute;
+            bottom: 1rem;
+            left: 1rem;
+            color: white;
+            background: rgba(0,0,0,0.5);
+            padding: 1rem;
+            border-radius: 0.5rem;
+        }
+    </style>
+    <title>Project Carousel</title>
+</head>
+<body>
+<main class="container">
+    <div class="carousel">
+        <!-- Carousel item 1 -->
+        <div class="carousel-item">
+            <img src="https://images.pexels.com/photos/691668/pexels-photo-691668.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Project Image">
+            <div class="carousel-text">
+                <h2>SEI Project 4 - The Reuse Network</h2>
+                <p>Created The Reuse Network, a Python-React full stack app that enables users to...</p>
+                <a href="#" role="button">Github</a>
+                <a href="#" role="button">Site</a>
+            </div>
+        </div>
+        <!-- Repeat for more items -->
+    </div>
+</main>
+</body>
+</html>

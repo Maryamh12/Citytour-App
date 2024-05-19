@@ -1,0 +1,167 @@
+.updatePage{
+    /* width: 100vw; */
+    height: 85.4vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.Update-form{
+    width: 50%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    /* margin-top: 7em; */
+    position: relative;
+    
+}
+
+.errorMessageUpdate {
+    position: absolute;
+    bottom: -3.5em;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #353535;
+    background-color: white;
+    padding: 0.5em 1em 0.5em 1em;
+    border-radius: 0.5em;
+    box-shadow: 0 0.1em 0.2em 0 rgb(29, 26, 26);
+    font-size: 0.8em;
+}
+.errorMessageUpdate::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 9px solid white;
+    position: absolute;
+    top: -15%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.inputUpdate , .buttonUpdate {
+    color: black;
+    background-color: white;
+    width: 80%;
+    height: 1.5em;
+    padding: 1em 1em;
+    margin-bottom: 1em;
+    border-radius: 0.5em;
+}
+.buttonUpdate {
+    color: white;
+    background-color: #353535; 
+    height: 2em;
+    padding-bottom: 2em;
+}
+.inputUpdateImage{
+    position: relative;
+    width: 80%;
+    height: 30em;
+    padding: 1em 1em;
+    margin-bottom: 1em;
+    background-size: cover;
+    background-position: center;
+    border-radius: 0.5em;
+    background-image: url(https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg?auto=compress&cs=tinysrgb&w=600);
+   
+}
+#inputImage{
+    display: none;
+   
+}
+#inputImageUpdateSource{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 5px;
+    /* width: 100%; */
+    height: 50px;
+    
+}
+
+#descriptionText{
+    color: black;
+    width: 80%;
+    height: 300px;
+    margin-bottom: 5px;
+  }
+
+.updateVideo{
+    
+    width: 800px;
+    /* height: 80em; */
+    overflow: hidden;
+  }
+
+
+@media (max-width:1300px){
+    .Update-form{
+        min-width: 500px;    
+    }
+    .updateVideo{
+        min-width: 600px;
+        overflow: hidden;
+      }
+}
+@media (max-width:1100px){
+    .Update-form{
+        min-width: 350px;    
+        box-sizing: border-box;
+        padding: 0;
+    }
+    .updatePage{
+        min-width: 400px;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+    .updateVideo{
+        overflow: hidden;
+        position: absolute;
+        min-width: 0;
+        width: 100%;
+        top: 13%;
+        height: 78vh;
+        object-fit: cover;
+        filter: blur(8px) brightness(80%);
+        z-index: -10;
+      }
+    .Update-form{
+       order: 1;
+       position: absolute;
+       z-index: 10;
+      }
+      .inputUpdate, .buttonUpdate {
+     
+        width: 90%;
+        padding: 1em 1em;
+       
+      }
+      .buttonUpdate {
+        width: 90%;
+        padding: 1em 1em 2em 1em;
+      }
+      #descriptionText { 
+        width: 90%;
+      }
+      .inputUpdateImage {
+        width: 90%;
+        padding: 1em 1em;
+      }
+      #inputImageSourceLeft {
+        width: 100%;
+        object-fit: cover;
+        overflow: hidden;
+        filter: blur(8px) brightness(80%);
+        z-index: -10;
+    }
+   
+}

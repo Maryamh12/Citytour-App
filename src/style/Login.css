@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kode+Mono:wght@400..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: "Anta", sans-serif;
+    background: #353535;
+    color: white;
+   
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    /* gap: 10px; */
+}
+
+main {
+    /* max-width: 1250px; */
+    margin: 0;
+    padding: 5em 0;
+    gap: 0;
+    height: 85.3vh;
+    overflow: hidden;
+}
+
+main img {
+    grid-column: 3/7;
+    width: 30vw;
+    height: 50vh;
+    object-fit: cover;
+    font-size: 1.2rem;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 3em 0 0 0;
+    
+}
+.welcomLogin {
+    background-color: white;
+    grid-column: 7/10;
+    margin: 3em 0 0 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 40vw;
+    height: 50vh;
+    padding: 20px 20px;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    
+    
+}
+#container-password{
+    width: 60%;
+    box-sizing: border-box;
+    padding: 0 ;
+    margin: 0;
+    position: relative;
+    min-width: 250px;
+}
+.errorMessageLogin{
+    position: absolute;
+    top: 3em;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    background-color: black;
+    padding: 0.5em 1em 0.5em 1em;
+    border-radius: 0.5em;
+    box-shadow: 0 0.1em 0.2em 0 rgb(29, 26, 26);
+    font-size: 0.8em;
+    width: 80%;
+    text-align: center;
+}
+.errorMessageLogin::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 9px solid black;
+    position: absolute;
+    bottom: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#usernameLogin{
+    width: 100%;
+    padding:0.3em 0 ;
+    margin-bottom: 2em;
+    font-family: "Anta", sans-serif;
+    min-width: 250px;
+    box-sizing: border-box;
+}
+#passwordLogin {
+    width: 100%;
+    padding:0.3em 0 ;
+    margin-bottom: 2em;
+    font-family: "Anta", sans-serif;
+    /* border-radius: .2em; */
+    min-width: 250px;
+    box-sizing: border-box;
+   
+}
+#show-password{
+    position: absolute;
+    top:14%;
+    /* color: #353535;
+    background-color: #353535; */
+    right: 5%;
+    cursor: pointer;
+}
+#submitLogin{
+    width: 100%;
+    padding:0.4em 0 ;
+    margin-bottom: 1em;
+    background-color: #353535;
+    color: white;
+    font-family: "Anta", sans-serif;
+    cursor: pointer;
+    min-width: 250px;
+    box-sizing: border-box;
+    
+}
+
+@media (max-width:1200px){
+    .welcomLogin {
+        width: 60vw;
+        grid-column: 4/10;
+    }
+    main img {
+        grid-column: 2/4;
+       
+        
+    }
+
+}
+@media (max-width:800px){
+    
+    .welcomLogin {
+        width: 80vw;
+        grid-column: 2/12;
+        height: 41vh;
+        margin: 0;
+        padding-top: 0;
+    }
+    main img {
+        width: 80vw;
+        grid-column: 2/12;
+        height: 25vh;
+        
+    }
+    main {
+      
+        height: 82.6vh;
+        overflow: hidden;
+    }
+}

@@ -1,0 +1,8 @@
+.backgroundContainer{
+    background-position: top;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+
+    background-image: url(https://images.pexels.com/photos/11661581/pexels-photo-11661581.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load);
+}

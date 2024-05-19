@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kode+Mono:wght@400..700&display=swap');
+
+
+body{
+    margin: 0;
+    font-family: "Anta", sans-serif;
+    background: #353535;
+    color: white;
+   box-sizing: border-box;
+  
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    /* gap: 10px; */
+}
+
+
+#mainRegister {
+  
+    /* background-position: top;
+    background-size: cover; */
+    margin: 0;
+    padding: 5em 0;
+    gap: 0;
+    height: 85.3vh;
+    /* background-image: url(https://images.pexels.com/photos/11661581/pexels-photo-11661581.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load); */
+}
+
+
+.welcomRegister {
+  
+    background-color: white;
+    grid-column: 7/10;
+    margin: 3em 0 0 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 40vw;
+    height: 50vh;
+    padding: 20px 20px;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    
+    
+}
+
+#username , #password , #confirmpassword , #email{ 
+    width: 50%;
+    padding:0.3em 0 ;
+    margin-bottom: 2em;
+    font-family: "Anta", sans-serif;
+    min-width: 250px;
+}
+#password{
+    width: 50%;
+    padding:0.3em 0 ;
+    margin-bottom: 2em;
+    font-family: "Anta", sans-serif;
+    /* border-radius: .2em; */
+    min-width: 250px;
+}
+
+#submit{
+    width: 100%;
+    padding:0.4em 0 ;
+    margin-bottom: 1em;
+    background-color: #353535;
+    color: white;
+    font-family: "Anta", sans-serif;
+    cursor: pointer;
+    min-width: 250px;
+    
+}
+
+#container-password{
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0 ;
+    margin: 0;
+    position: relative;
+    min-width: 250px;
+}
+.errorMessageRegister{
+    position: absolute;
+    top: 3em;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    background-color: black;
+    padding: 0.5em 1em 0.5em 1em;
+    border-radius: 0.5em;
+    box-shadow: 0 0.1em 0.2em 0 rgb(29, 26, 26);
+    font-size: 0.8em;
+    width: 80%;
+    text-align: center;
+}
+.errorMessageRegister::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    /* border-bottom: 9px solid black; */
+    position: absolute;
+    bottom: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+@media (max-width:1200px){
+    .welcomRegister {
+        width: 60vw;
+    }
+
+}
+@media (max-width:800px){
+    .welcomRegister {
+        width: 80vw;
+    }
+
+}

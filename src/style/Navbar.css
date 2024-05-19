@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kode+Mono:wght@400..700&display=swap');
+
+
+body{
+    margin: 0;
+    font-family: "Anta", sans-serif;
+    background: #353535;
+    color: white;
+}
+.gridD{
+    /* display: grid;
+    grid-template-columns: repeat(12,1fr); */
+    /* gap: 10px; */
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    /* height: 7vh; */
+}
+.noGrid{
+    /* display: grid;
+    grid-template-columns: repeat(12,1fr); */
+    /* gap: 10px; */
+    display: flex;
+    justify-content: space-between;
+}
+header{
+    /* background-color: #BBC7CE; */
+    padding: 5px 40px;
+    
+    
+    color: black;
+    /* order: -1; */
+    height: 100%;
+    transition: 1s ease;
+   
+}
+#noHeader{
+    align-items: center;
+}
+.imageHeader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.imageHeader img {
+    /* background-color: aqua; */
+    background-color: transparent;
+    width: 50px;
+    height: 36px;
+    /* grid-column: 1/2; */
+    /* justify-self: end; */
+}  
+/* .imageHeader h1 {
+    grid-column: 2/5;
+   
+}
+ */
+
+
+header  nav {
+    display: flex;
+
+    /* grid-column: 6 /13; */
+    
+    text-align: center;
+    justify-self:right;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+   flex-direction: row;
+}
+#aTag {
+    text-decoration: none;
+    padding-left: 30px;
+    color: black;
+    font-size: 1.7rem;
+    font-weight: 700px;
+    list-style: none;
+    position: relative;
+    transition:all 5s ease;
+   
+}
+#aTag li::after {
+    content: "";
+    width: 0; /* Start with a width of 0 */
+    height: 5px;
+    background-color: black;
+    bottom: -1.88em; /* Positioned at the bottom of the aTag element */
+    left: 15px;
+    position: absolute;
+    transition: width 0.3s ease; /* Add transition to the pseudo-element */
+}
+
+
+#aTag li:hover::after {
+    width: 100%; /* Underline grows to full width on hover/active */
+}
+#aTag li:active::after {
+    content: "";
+    width: 100%; /* Start with a width of 0 */
+    height: 5px;
+    background-color: black;
+    bottom: -1.88em; /* Positioned at the bottom of the aTag element */
+    left: 15px;
+    position: absolute;
+    transition: width 0.3s ease; /* Add transition to the pseudo-element */
+}
+
+a {
+    text-decoration: none;
+    padding-left: 30px;
+    color: black;
+    font-size: 1.7rem;
+    font-weight: 700px;
+   list-style: none;
+}
+
+.backgroundContainer{
+    background-position: top;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+
+    background-image: url(https://images.pexels.com/photos/11661581/pexels-photo-11661581.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load);
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+ .bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+    background-color: black;
+ }
+@media (max-width:1000px){
+
+    .hamburger{
+        display: block;
+        
+    }
+    #activeHeader{
+        align-items:flex-start;
+    }
+    .active-right{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 2em;
+    }
+    .noActive-right{
+        margin-top: 0;
+    }
+    .activeHamburger .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .activeHamburger .bar:nth-child(1) {
+        transform: translatey(8px) rotate(45deg);
+    }
+    .activeHamburger .bar:nth-child(3) {
+        transform: translatey(-8px) rotate(-45deg);
+    }
+    .nav-menuWin{
+        display: none;
+        /* position: fixed; */
+        left:0;
+        top:5.5em;
+        gap:0;
+        flex-direction: column;
+        align-items: flex-end;
+        background-color: white;
+        width: 100%;
+        text-align: center;
+       
+
+    }
+    .noNav-menuWin{
+      
+      display: none;
+        /* position: fixed; */
+        left:0;
+        top:5.5em;
+        gap:0;
+        flex-direction: column;
+        align-items: flex-end;
+        
+        width: 100%;
+        text-align: center;
+    }
+    #aTag{
+        margin: 16px;
+        margin-right: 0;
+    }
+    .activeNav {
+        /* position: fixed; */
+        display: flex;
+        left:0;
+        top:5.5em;
+        gap:0;
+        flex-direction: column;
+        /* background-color: white; */
+        width: 100%;
+        text-align: center;
+        align-items: flex-end
+    }
+    #aTag li::after {
+        bottom: -1.45em; /* Positioned at the bottom of the aTag element */
+    }
+
+}

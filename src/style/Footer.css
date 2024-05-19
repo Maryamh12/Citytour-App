@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kode+Mono:wght@400..700&display=swap');
+
+
+/* body{
+    margin: 0;
+    font-family: "Anta", sans-serif;
+    background: #353535;
+    color: white;
+} */
+.gridd{
+    /* display: grid;
+    grid-template-columns: repeat(12,1fr); */
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ justify-items: center;
+}
+
+footer{
+   /* display: flex; */
+    padding: 20px 0;
+    /* height: 7vh; */
+    background-color: white;
+    color: black;
+   
+}
+
+
+footer  nav {
+    display: flex;
+    
+    /* grid-column: 5/10; */
+    justify-content: center;
+   
+   
+}
+footer  nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 700px; 
+    padding: 0;
+}
+
+footer  nav a:not(:first-child){
+    margin-left: 40px;
+    
+}
+/* footer  nav a:first-child{
+    margin-left: 40px;
+    
+}  */
+.imo {
+   
+    width: 35px;
+    height: 35px;
+    transform: scale(1);
+    transition: 500ms ease;
+}
+
+.imo:hover{
+    transform: scale(1.2);
+}
