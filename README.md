@@ -11,16 +11,16 @@ View the deployed site here.
 ## Application Visuals
 
 <p align="center" >
-  <img src="./images/Comment.gif" alt="Demo 1" width="450" height="350"/>
-  <img src="./images/Homepage-2.gif" alt="Demo 2" width="450" height="350"/>
+  <img src="./images/Comment.gif" alt="Demo 1" width="350" height="350"/>
+  <img src="./images/Homepage-2.gif" alt="Demo 2" width="350" height="350"/>
 </p>
 <p align="center">
-  <img src="./images/Createstorypage.gif" alt="Demo 1" width="450" height="350"/>
-  <img src="./images/Homepage1.gif" alt="Demo 3" width="450" height="350"/>
+  <img src="./images/Createstorypage.gif" alt="Demo 1" width="350" height="350"/>
+  <img src="./images/Homepage1.gif" alt="Demo 3" width="350" height="350"/>
 </p>
 <p align="center">
-  <img src="./images/Tourbrowspage.gif" alt="Demo 2" width="450" height="350"/>
-  <img src="./images/Updatestorypage.gif" alt="Demo 3" width="450" height="350"/>
+  <img src="./images/Tourbrowspage.gif" alt="Demo 2" width="350" height="350"/>
+  <img src="./images/Updatestorypage.gif" alt="Demo 3" width="350" height="350"/>
 </p>
 
 
@@ -28,9 +28,9 @@ View the deployed site here.
 ## Responsive Design
 
 <p align="center">
-  <img src="./images/Responsive1.gif" alt="Demo 1" width="300"/>
-  <img src="./images/Responsive2.gif" alt="Demo 2" width="300"/>
-  <img src="./images/Responsive3.gif" alt="Demo 3" width="300"/>
+  <img src="./images/Responsive1.gif" alt="Demo 1" width="250"/>
+  <img src="./images/Responsive2.gif" alt="Demo 2" width="250"/>
+  <img src="./images/Responsive3.gif" alt="Demo 3" width="250"/>
 </p>
 
 
