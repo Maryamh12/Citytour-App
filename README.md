@@ -152,9 +152,6 @@ const citySchema = mongoose.Schema(
 
 
 export default mongoose.model("City", citySchema);
-
-
-
 ```
 
 
