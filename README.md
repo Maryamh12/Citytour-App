@@ -96,9 +96,8 @@ My city model is designed to display the name of the city, an image representing
 
 
 
+
 ```javascript
-
-
 import mongoose from "mongoose";
 
 
@@ -111,6 +110,7 @@ const commentSchema = mongoose.Schema(
     timestamps: true,
   }
 );
+
 const storySchema = mongoose.Schema(
   {
     name: { type: String, required: true },
@@ -152,6 +152,7 @@ const citySchema = mongoose.Schema(
 
 
 export default mongoose.model("City", citySchema);
+
 ```
 
 
