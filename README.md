@@ -993,7 +993,7 @@ By incorporating the ability to create comments, I aimed to foster engagement an
 - Ensuring secure user authentication and authorization was complex. Implementing JWT for secure token handling, protecting frontend routes, and managing role-based access control to differentiate admin and user permissions added significant complexity.
 
 
-#### Key Learnings:
+## Key Learnings:
 
 - One key learning was the importance of thorough testing throughout the development process. Implementing unit tests and integration tests early on helped identify bugs and issues before they became major problems. This proactive approach saved time and ensured a more stable and reliable application.
 
@@ -1031,7 +1031,7 @@ describe('POST /login', () => {
 - Another significant learning experience was leveraging external libraries and APIs to enhance functionality. Integrating libraries like Axios for HTTP requests and Cloudinary for image uploads streamlined development and added powerful features without reinventing the wheel.
 
 
-#### Future Improvements:
+## Future Improvements:
 
 - Code Refactoring and Optimization:
   To enhance code organization and readability, I aim to refactor and optimize the codebase. Specifically, improving the structure and readability of complex components like CityCard and TourBrowse, and utilizing proper destructuring and modularization techniques. This will make the code more maintainable and easier for other developers to understand and contribute to.
@@ -1039,7 +1039,7 @@ describe('POST /login', () => {
   
 ##### Example:
 
-  - Current Code:
+   Current Code:
 
 
 ```javascript
@@ -1057,7 +1057,7 @@ const CityCard = ({ city }) => {
 ```
 
 
-  - Improved Code:
+  Improved Code:
 
 ```javascript
 
@@ -1075,11 +1075,11 @@ const CityCard = ({ city }) => {
  A significant future enhancement is to develop a comprehensive user profile feature. This would allow users to create and personalize their profiles, showcasing their travel stories and experiences. Additionally, integrating social features like following other users and commenting on profiles would increase engagement and community interaction.
 
   ##### Example:
-  - Current Code: No user profile feature implemented.
+    Current Code: No user profile feature implemented.
 
 
 
-  - Improved Code:
+    Improved Code:
 
   ```javascript
 
